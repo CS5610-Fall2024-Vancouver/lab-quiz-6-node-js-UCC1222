@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title User List
+  body
+    h1 User List
+    ul
+      each user, index in users
+        li #{index + 1} : #{user.name}
+    a(href='/users/add') Add a new user
